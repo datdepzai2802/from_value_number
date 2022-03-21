@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <div class="box-form">
+           <div class="createArr">
+               <button onclick="handleData()">Tạo Mảng</button>
+               <input type="text" id="data">
+           </div>
+           <div>
+               <span id="tb" style="color: orangered;margin-right: 10px;">Giá trị mảng sau khi sử lý:</span><span id="valueUpdate"></span>
+           </div>
+           <div class="radioCheck">
+               <input type="radio" name="check" id="goup" ><span>Sắp xếp tăng</span>
+               <input type="radio" name="check" id="godown"><span>Sắp xếp giảm</span>
+           </div>
+           <div class="updateArr">
+               <label for="add">Thêm vào vị trí</label><input type="text" name="add" id="add">
+               <label for="value">Giá trị</label><input type="text" name="value" id="value">
+               <button onclick="addValue()">Thêm</button>
+           </div>
+       </div>
+   </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
